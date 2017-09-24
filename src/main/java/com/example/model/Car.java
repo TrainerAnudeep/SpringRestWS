@@ -3,14 +3,13 @@ package com.example.model;
 import java.io.Serializable;
 
 public class Car implements Serializable{
-
-		private static final long serialVersionUID = -6592343261209635942L;
+	
+	private static final long serialVersionUID = 6161953988978811149L;
 	
 		private String vin;
 	    private String color;
 	    private Integer miles;
-	    
-	    
+
 		public Car(String vin, String color, Integer miles) {
 			super();
 			this.vin = vin;
@@ -18,7 +17,6 @@ public class Car implements Serializable{
 			this.miles = miles;
 		}
 		public Car() {
-			// TODO Auto-generated constructor stub
 		}
 		public String getVin() {
 			return vin;

@@ -2,15 +2,12 @@ package com.example.main;
 
 import org.springframework.web.client.RestTemplate;
 
-import com.example.model.Page;
+import com.example.model.Car;
 
 public class ConsumeRest {
 	public static void main(String args[]) {
         RestTemplate restTemplate = new RestTemplate();
-        Page page = restTemplate.getForObject("http://graph.facebook.com/pivotalsoftware", Page.class);
-        System.out.println("Name:    " + page.getName());
-        System.out.println("About:   " + page.getAbout());
-        System.out.println("Phone:   " + page.getPhone());
-        System.out.println("Website: " + page.getWebsite());
+        Car car = restTemplate.getForObject("http://localhost:8080/SpringRestWS/car/", Car.class);
+        System.out.println(car);
     }
 }

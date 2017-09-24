@@ -5,18 +5,6 @@
 
 	<display-name>Spring Web MVC Application</display-name>
 
-    <!-- Root Context: defines shared resources visible to all other web components -->
-
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/spring/root-context.xml</param-value>
-	</context-param>
-
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
-
-
 	<servlet>
 		<servlet-name>applicationContext</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -31,6 +19,5 @@
 		<servlet-name>applicationContext</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
 
 </web-app>

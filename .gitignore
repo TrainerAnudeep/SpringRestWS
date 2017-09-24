@@ -1,2 +1,9 @@
+.project/
 /build/
 /target/
+.classpath
+.settings/
+.idea/
+.project
+.springBeans
+*.iml
